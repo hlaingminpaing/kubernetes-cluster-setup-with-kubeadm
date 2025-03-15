@@ -169,8 +169,8 @@ sudo mkdir -p /etc/containerd
 containerd config default | sudo tee /etc/containerd/config.toml
 sudo sed -i 's/SystemdCgroup = false/SystemdCgroup = true/' /etc/containerd/config.toml
 sudo systemctl restart containerd
-This is required to mitigate the instability of having two cgroup managers. Please refer https://kubernetes.io/docs/setup/production-environment/container-runtimes/
 ```
+This is required to mitigate the instability of having two cgroup managers. Please refer https://kubernetes.io/docs/setup/production-environment/container-runtimes/
 
 ### Install kubeadm, kubectl, and kubelet from the official Kubernetes package repository:
 
