@@ -199,3 +199,12 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 kubeadm join 10.0.0.100:6443 --token mtcv1t.pvyu0ij061oake7t --discovery-token-ca-cert-hash sha256:991981f37a96591e8e4fe57ce761ab7b7832a8a90c76e612234fc1c8b9fcbb55 
 ```
+
+### kubectl autocomplete in linux
+```sh
+sudo apt-get install bash-completion
+kubectl completion bash | sudo tee /etc/bash_completion.d/kubectl > /dev/null
+kubectl completion bash
+source /usr/share/bash-completion/bash_completion
+echo 'source <(kubectl completion bash)' >>~/.bashrc
+```
