@@ -22,7 +22,10 @@ overlay
 br_netfilter
 EOF
 ```
-
+### Disable swap partition
+```sh
+sudo swapoff -a
+```sh
 
 ### sysctl params required by setup, params persist across reboots
 ```sh
@@ -159,6 +162,11 @@ sudo apt-get install -y containerd.io=1.7.19-1
 ```
 
 Note: This is only one way of installing containerd. Please refer https://github.com/containerd/containerd/blob/main/docs/
+
+### Disable swap partition
+```sh
+sudo swapoff -a
+```sh
 
 ### Configure the systemd cgroup driver with the following commands:
 
