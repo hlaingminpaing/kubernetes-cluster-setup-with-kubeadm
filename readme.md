@@ -25,7 +25,7 @@ EOF
 ### Disable swap partition
 ```sh
 sudo swapoff -a
-```sh
+```
 
 ### sysctl params required by setup, params persist across reboots
 ```sh
@@ -166,7 +166,7 @@ Note: This is only one way of installing containerd. Please refer https://github
 ### Disable swap partition
 ```sh
 sudo swapoff -a
-```sh
+```
 
 ### Configure the systemd cgroup driver with the following commands:
 
