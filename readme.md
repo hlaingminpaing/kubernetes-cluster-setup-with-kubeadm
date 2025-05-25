@@ -8,7 +8,7 @@ sudo apt-get update
 
 ```sh
 sudo apt-get install -y 
-apt install ca-certificates curl software-properties-common gnupg lsb-release
+sudo apt install ca-certificates curl software-properties-common gnupg lsb-release
 ```
 
 ### Allow forwarding IPv4 by loading the br_netfilter module with the follow commands:
