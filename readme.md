@@ -110,7 +110,7 @@ kubectl describe nodes
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 ```
 
-### Worker Node Setup
+# Worker Node Setup
 
 ### Update the package index
 ```sh
