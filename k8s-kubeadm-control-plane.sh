@@ -62,11 +62,11 @@ echo "[7/10] Installing Kubernetes components..."
 
 # Add Kubernetes signing key
 sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.32/deb/Release.key | \
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.35/deb/Release.key | \
   sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 
 # Add Kubernetes repository
-echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.32/deb/ /' | \
+echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.35/deb/ /' | \
   sudo tee /etc/apt/sources.list.d/kubernetes.list
 
 sudo apt-get update -y
