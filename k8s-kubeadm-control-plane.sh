@@ -50,7 +50,7 @@ echo \
 sudo apt-get update -y
 
 # Install specific version of containerd
-sudo apt-get install -y containerd.io
+sudo apt-get install -y containerd.io=1.7.19-1
 
 # Configure containerd with systemd cgroup driver
 sudo mkdir -p /etc/containerd
