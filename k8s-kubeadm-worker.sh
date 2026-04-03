@@ -45,7 +45,7 @@ echo \
 
 # Install containerd
 sudo apt-get update -y
-sudo apt-get install -y containerd.io=1.7.19-1
+sudo apt-get install -y containerd.io
 
 echo "[6/9] Disabling swap..."
 sudo swapoff -a
