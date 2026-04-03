@@ -49,7 +49,7 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 # Install containerd
 sudo apt-get update
-sudo apt-get install -y containerd.io=1.7.19-1
+sudo apt-get install -y containerd.io
 ```
 
 Note: This is only one way of installing containerd. Please refer https://github.com/containerd/containerd/blob/main/docs/
@@ -158,7 +158,7 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 # Install containerd
 sudo apt-get update
-sudo apt-get install -y containerd.io=1.7.19-1
+sudo apt-get install -y containerd.io
 ```
 
 Note: This is only one way of installing containerd. Please refer https://github.com/containerd/containerd/blob/main/docs/
